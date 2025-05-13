@@ -17,10 +17,15 @@ public class Antena5g extends Antena {
         boolean faixaSub6GHz = frequencia >= 3300 && frequencia <= 4200;
         boolean faixaMmWave = frequencia >= 24250 && frequencia <= 52600;
 
-        if (faixaSub6GHz || faixaMmWave) {
-            this.frequencia = frequencia;
-        } else {
-            throw new FrequenciaInvalidaException("Frequência inválida para antena 5G.");
+        try {
+            if (faixaSub6GHz || faixaMmWave) {
+                this.frequencia = frequencia;
+            } else {
+                throw new FrequenciaInvalidaException("Frequência inválida para antena 5G.");
+            }
+        }
+        catch (FrequenciaInvalidaException e) {
+            System.out.println(e.getMessage());
         }
     }
 }

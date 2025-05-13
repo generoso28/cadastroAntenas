@@ -15,10 +15,15 @@ public class Antena4g extends Antena {
 
     @Override
     public void configurarFrequencia(double frequencia) throws FrequenciaInvalidaException {
-        if (frequencia >= 700 && frequencia <= 2600) { // faixa típica de 4G
-            this.frequencia = frequencia;
-        } else {
-            throw new FrequenciaInvalidaException("Frequência inválida para antena 4G.");
+        try {
+            if (frequencia >= 700 && frequencia <= 2600) { // faixa típica de 4G
+                this.frequencia = frequencia;
+            } else {
+                throw new FrequenciaInvalidaException("Frequência inválida para antena 4G.");
+            }
+        }
+        catch (FrequenciaInvalidaException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
