@@ -14,7 +14,7 @@ public class Antena4g extends Antena {
     }
 
     @Override
-    public void configurarFrequencia(double frequencia) throws FrequenciaInvalidaException {
+    public void configurarFrequencia(double frequencia){
         try {
             if (frequencia >= 700 && frequencia <= 2600) { // faixa típica de 4G
                 this.frequencia = frequencia;

@@ -13,7 +13,7 @@ public class Antena5g extends Antena {
     }
 
     @Override
-    public void configurarFrequencia(double frequencia) throws FrequenciaInvalidaException {
+    public void configurarFrequencia(double frequencia){
         boolean faixaSub6GHz = frequencia >= 3300 && frequencia <= 4200;
         boolean faixaMmWave = frequencia >= 24250 && frequencia <= 52600;
 
