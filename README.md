@@ -3,6 +3,7 @@
 ## Descrição
 
 Este projeto em Java gerencia o cadastro de diferentes tipos de antenas (4G e 5G), permitindo a configuração de suas frequências e o armazenamento/leitura dessas informações em um arquivo de texto.
+Projeto desenvolvido para a disciplina de Programação Orientada a Objetos, no INATEL, por Lucas Caixeta Generoso e José Eduardo de Paula Assis.
 
 ## Funcionalidades
 
