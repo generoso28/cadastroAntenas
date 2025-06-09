@@ -28,4 +28,5 @@ public class Antena5g extends Antena {
             System.out.println(e.getMessage());
         }
     }
+
 }

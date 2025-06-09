@@ -19,7 +19,7 @@ public abstract class Antena implements Configuravel {
         this.id = id;
         this.localizacaox = localizacaox;
         this.localizacaoy = localizacaoy;
-        this.frequencia = frequencia;
+        configurarFrequencia(frequencia);
     }
     public abstract String getTipo();
 
@@ -58,5 +58,4 @@ public abstract class Antena implements Configuravel {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
         }
     }
-
 }
